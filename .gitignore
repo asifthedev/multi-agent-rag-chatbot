@@ -1,2 +1,145 @@
-.venv
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
 .env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# UV specific
+# Keep uv.lock - it's like package-lock.json for reproducible builds
+# uv.lock
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Data files (keep CSV files, ignore other large files)
+data/raw/*.xlsx
+data/raw/*.parquet
+data/processed/*.parquet
+data/processed/*.pkl
+data/processed/*.pickle
+
+# Keep CSV files - they're part of the repo
+# data/raw/*.csv
+# data/processed/*.csv
+
+# But keep example files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Model files and embeddings (usually large)
+models/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# API keys and secrets
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Cache
+.cache/
+*.cache
+
+# Pinecone/Vector DB cache
+.pinecone/
+vector_cache/
+
+# Build artifacts
+*.whl
+
+# Documentation builds
+docs/_build/
+site/
+
+# Crawled data (optional - uncomment if you want to ignore)
+# crawled_data/
+# scraped_content/

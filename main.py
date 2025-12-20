@@ -2,6 +2,8 @@ import pandas as pd
 
 df = pd.read_excel("./data/raw/faqs.xlsx")
 
-pd.save_csv("faqs.csv")
+df.drop(columns=["Actual Answer", "Category"], inplace=True)
 
-print(df.head(5))
+print(df.columns)
+
+df.to_csv("./data")
